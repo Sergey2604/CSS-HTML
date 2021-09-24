@@ -14,6 +14,7 @@ body {
 
 }
 .container-header {
+    width: 100%;
     margin-top: 32px;
     display: flex;
     justify-content: space-around;
@@ -82,20 +83,90 @@ body {
     width: 100%;
     height: 51px;
     background-color: #ffffff;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
+.menu-list {
+    list-style-type: none;
+    position: relative;
+    padding: 14px;
+
+}
+a {
+    text-decoration: none;
+}
+.menu-link {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
     color: #222222;
-    text-align: center;
-    align-items: center;
+    margin-left: 40px;
+}
+.women-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    top: 47px;
+    display: none;
+}
+.women-box2 {
+    margin-right: 46px;
+}
+.women-box2:last-of-type {
+    margin-right: 0;
+}
+.women-box:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 60px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+.menu-list:hover .women-box {
+    display: flex;
+}
+.last:hover .women-box {
+    right: 0;
+    left: auto;
+}
+.women-h3 {
+    border-bottom: 1px solid #e8e8e8;
+    width: 235px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.women-link {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.women-link:hover {
+    color: #f16d7f;
 }
 .container1-main {
-    width: 1600px;
+    width: 100%;
     height: 665px;
     background-color: #e8e8e8;
     background-image: url(img/background_main.png);
     background-position: right;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
 }
@@ -266,4 +337,137 @@ body {
     letter-spacing: normal;
     font-size: 30px;
     color: #f16d7f;
+}
+.h2-f-items {
+    font-size: 30px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #222222;
+    margin-top: 100px;
+    margin-bottom: 16px;
+    text-align: center;
+    padding-bottom: 0;
+}
+.p-f-items {
+    font-size: 14px;
+    line-height: 54px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #9f9f9f;
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+.f-items-container {
+    width: 1140px;
+    margin-left: 230px;
+    margin-right: 230px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.f-items-img {
+    margin-right: 30px;
+}
+.last-img {
+    margin-right: 0;
+}
+figcaption {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+    margin: 18px auto;
+}
+.price {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f16d7f;
+    margin-bottom: 60px;
+}
+.browse-products {
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    margin: 80px auto 113px;
+}
+.p-button {
+    font-size: 16px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+.container-offer {
+    width: 1140px;
+    height: 529px;
+    margin-left: 230px;
+    margin-right: 230px;
+    background-color: #222224;
+    display: flex;
+    flex: 1;
+}
+.link-offer {
+    width: 767px;
+    height: 529px;
+}
+.img-girl {
+    position: absolute;
+
+}
+.div-text-girl {
+    width: 300px;
+    position: relative;
+    top: 146px;
+    left: 39px;
+    right: 435px;
+}
+.text-girl {
+    font-size: 54px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+.offer-span1 {
+    color: #f16d7f;
+}
+.offer-span2 {
+    line-height: 1;
+    font-size: 32px;
+    padding: 0;
+}
+.offer-form {
+    padding-left: 450px;
+    padding-top: 36px;
+    padding-right: 43px;
+}
+.del {
+    display: flex;
+}
+.del-img {
+    width: 45px;
+    height: 32px;
+}
+.h4-del {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+    padding-left: 33px;
+    padding-bottom: 17px;
+    padding-right: 133px;
+}
+.span-del {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+    padding-bottom: 54px;
 }
