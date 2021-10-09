@@ -1,4 +1,4 @@
-.flex-bet, .brand1, .heading-cart, .shipping-address-checkout, .offer-form-product, .pagination-bootstrap, .filter-result .img-result, .sort-name, .sort-show, .filters-price .label-range, .checkbox-label, .filters-size, .filters-trend, .nav-filter, .filter-top-product {
+.flex-bet, .subtotal-order, .order-left, .form-order, .buttons-cart, .brand-shopping, .heading-cart, .shipping-address-checkout, .offer-form-product, .pagination-bootstrap, .filter-result .img-result, .sort-name, .sort-show, .filters-price .label-range, .checkbox-label, .filters-size, .filters-trend, .nav-filter, .filter-top-product {
   display: flex;
   justify-content: space-between;
 }
@@ -430,12 +430,8 @@
 }
 
 .heading-cart .heading1-cart {
-  flex-grow: 4;
   text-align: left;
-}
-
-.grow1 {
-  flex-grow: 1;
+  width: 500px;
 }
 
 .headings {
@@ -446,6 +442,320 @@
   text-transform: uppercase;
   letter-spacing: -0.015;
   text-align: center;
+}
+
+.brand-shopping {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.imgname-shopping {
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+
+.div-img-shopping1 {
+  background: url("img/img_cart1.png") no-repeat;
+  width: 101px;
+  height: 153px;
+}
+
+.div-img-shopping1:hover {
+  background: url("img/img_cart1_1.png");
+  width: 101px;
+  height: 153px;
+}
+
+.div-img-shopping2 {
+  background: url("img/img_cart2.png") no-repeat;
+  width: 101px;
+  height: 153px;
+}
+
+.div-img-shopping2:hover {
+  background: url("img/img_cart2_1.png");
+  width: 101px;
+  height: 153px;
+}
+
+.div-img-shopping3 {
+  background: url("img/img_cart3.png") no-repeat;
+  width: 101px;
+  height: 153px;
+}
+
+.div-img-shopping3:hover {
+  background: url("img/img_cart3_1.png");
+  width: 101px;
+  height: 153px;
+}
+
+.text-imgname {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px;
+  margin-top: 10px;
+}
+
+.txt-imgname {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 510;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 38px;
+}
+
+.grey-shopping {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  text-transform: none;
+  padding: 0;
+  color: #575757;
+}
+
+.span-text-imgname {
+  font-weight: 300;
+  color: #6f6e6e;
+}
+
+.p-price-shopping {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #656565;
+}
+
+.input-quantity-shopping {
+  max-width: 54px;
+  max-height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-bottom: 13px;
+}
+
+.input-quantity-shopping::placeholder {
+  font-size: 13px;
+  line-height: 0 p;
+  font-weight: 400;
+  color: #656565;
+  text-align: center;
+}
+
+.p-shipping-shopping {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #656565;
+}
+
+.subtotal-shopping {
+  margin-right: 15px;
+}
+
+.p-subtotal-shipping {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #656565;
+}
+
+.action-shipping {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 510;
+  text-transform: uppercase;
+  color: #222222;
+  color: #c0c0c0;
+  margin-bottom: 22px;
+  margin-right: 20px;
+}
+
+.buttons-cart {
+  margin-top: 45px;
+}
+
+.button-cart {
+  width: 235px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.p-shopping-cart {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  padding-bottom: 19px;
+  padding-top: 19px;
+}
+
+.form-order {
+  margin-top: 63px;
+}
+
+.order-left {
+  flex-direction: column;
+}
+
+.p-shipping-address-cart, .p-text-center {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.details-country {
+  width: 355px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.details-country > .summary-country::after,
+.details-country > .summary-country::before {
+  content: "";
+}
+
+.order-left .details-country .summary-country .caret-country {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #bdbdbd;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  margin-left: 250px;
+}
+
+.p-summary-country {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  margin-left: 14px;
+}
+
+.summary-country {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.input-state-shippingform, .input-zip-shippingform, .coupon-shopping {
+  margin-top: 20px;
+}
+
+.input-state, .input-zip, .input-coupon {
+  width: 355px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.input-state::placeholder, .input-zip::placeholder,
+.input-coupon::placeholder {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 17px;
+}
+
+.p-text-center-cart {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+}
+
+.button-coupon {
+  width: 118px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  margin-top: 25px;
+}
+
+.order-right {
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.subtotal-order {
+  width: 101px;
+}
+
+.p-subtotal-order1, .p-subtotal-order2 {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.p-grand-total {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.span-grand-total {
+  color: #f16d7f;
+}
+
+.hr-shopping {
+  width: 275px;
+  height: 1px;
+  background-color: #f16d7f;
+}
+
+.button-submit-shopping {
+  width: 273px;
+  height: 50px;
+  background-color: #f16d7f;
+}
+
+.p-button-submit-shopping {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.quote-shipping {
+  width: 100px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-top: 23px;
+}
+
+.span-quote-button {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
 }
 
 /*# sourceMappingURL=style1.css.map */
