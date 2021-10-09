@@ -8,14 +8,14 @@ $text-checkout: #222222
 $txt-size: 13px
 $txt-12: 12px
 
-@mixin bold-txt-checkout ()
+@mixin bold-txt-checkout()
   font-size: $txt-size
   line-height: 1.2
   font-weight: 510
   text-transform: uppercase
   color: $text-checkout
 
-@mixin grey-txt-checkout ()
+@mixin grey-txt-checkout()
   font-size: $txt-size
   line-height: 20px
   font-weight: 400
@@ -27,7 +27,7 @@ $txt-12: 12px
   display: flex
   justify-content: center
 
-@mixin txt-style ($fs, $lh, $fw)
+@mixin txt-style($fs, $lh, $fw)
   font-size: $fs
   line-height: $lh
   font-weight: $fw
@@ -62,6 +62,7 @@ $txt-12: 12px
   @include txt-style(14px, 26px, 400)
   color: $text-grey
   font-family: Lato, sans-serif
+
 .filters-text-col
   @include txt-style(14px, 26px, 400)
   color: #dfdfdf
@@ -104,8 +105,10 @@ $txt-12: 12px
 
 .filters-price
   width: 262px
+
   .label-range
     @extend .flex-bet
+
 .range-label
   @include txt-style(14px, 26px, 400)
   color: $text-grey
@@ -186,12 +189,12 @@ $txt-12: 12px
   height: 280px
 
 .result-name
-  @include txt-style($txt-size,1.2,400)
+  @include txt-style($txt-size, 1.2, 400)
   text-transform: uppercase
   color: $text-grey
 
 .result-price
-  @include txt-style(16px,1.2,700)
+  @include txt-style(16px, 1.2, 700)
   text-transform: uppercase
   color: #f16d7f
 
@@ -209,7 +212,7 @@ $txt-12: 12px
   border-radius: 3px
 
 .span-viewall-product
-  @include txt-style(16px,26px,700)
+  @include txt-style(16px, 26px, 700)
   color: $text-red
 
 .offer-product
@@ -252,9 +255,10 @@ $txt-12: 12px
   flex-direction: column
 
 .details-checkout
-  @include txt-style(16px,1.2,700)
+  @include txt-style(16px, 1.2, 700)
   text-transform: uppercase
   color: $text-checkout
+
   .details-checkout > &__summary-checkout::after,
   .details-checkout > &__summary-checkout::before
     content: ''
@@ -289,6 +293,7 @@ $txt-12: 12px
 
 .div-fast-checkout
   display: flex
+
   &__grey-text-shipping
     margin-left: 4px
 
@@ -370,19 +375,244 @@ $txt-12: 12px
   margin-bottom: 20px
 
 .heading-cart .heading1-cart
-  flex-grow: 4
   text-align: left
-
-.grow1
-  flex-grow: 1
+  width: 500px
 
 .headings
-  @include txt-style(13px,20px,700)
+  @include txt-style(13px, 20px, 700)
   color: #222222
   text-transform: uppercase
   letter-spacing: -0.015
   text-align: center
 
-.brand1
+.brand-shopping
   @extend .flex-bet
+  padding-top: 25px
+  padding-bottom: 25px
+  align-items: center
 
+.imgname-shopping
+  display: flex
+  align-items: center
+  width: 500px
+
+.div-img-shopping1
+  background: url("img/img_cart1.png") no-repeat
+  width: 101px
+  height: 153px
+
+.div-img-shopping1:hover
+  background: url("img/img_cart1_1.png")
+  width: 101px
+  height: 153px
+
+.div-img-shopping2
+  background: url("img/img_cart2.png") no-repeat
+  width: 101px
+  height: 153px
+
+.div-img-shopping2:hover
+  background: url("img/img_cart2_1.png")
+  width: 101px
+  height: 153px
+
+.div-img-shopping3
+  background: url("img/img_cart3.png") no-repeat
+  width: 101px
+  height: 153px
+
+.div-img-shopping3:hover
+  background: url("img/img_cart3_1.png")
+  width: 101px
+  height: 153px
+
+.text-imgname
+  display: flex
+  flex-direction: column
+  margin-left: 21px
+  margin-top: 10px
+
+.txt-imgname
+  @include bold-txt-checkout
+  margin-bottom: 38px
+
+
+.grey-shopping
+  @include grey-txt-checkout
+  color: #575757
+
+.span-text-imgname
+  font-weight: 300
+  color: $text-grey
+
+.p-price-shopping
+  @include txt-style(13px, 20px, 400)
+  color: #656565
+
+.input-quantity-shopping
+  max-width: 54px
+  max-height: 30px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  margin-bottom: 13px
+
+.input-quantity-shopping::placeholder
+  @include txt-style(13px, 0 p, 400)
+  color: #656565
+  text-align: center
+
+.p-shipping-shopping
+  @include txt-style(13px, 20px, 400)
+  color: #656565
+
+.subtotal-shopping
+  margin-right: 15px
+
+.p-subtotal-shipping
+  @include txt-style(13px, 20px, 400)
+  color: #656565
+
+.action-shipping
+  @include bold-txt-checkout
+  color: #c0c0c0
+  margin-bottom: 22px
+  margin-right: 20px
+
+.buttons-cart
+  @extend .flex-bet
+  margin-top: 45px
+
+.button-cart
+  width: 235px
+  height: 50px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+
+.p-shopping-cart
+  @include txt-style(14px, 1.2, 700)
+  text-transform: uppercase
+  color: #4a4a4a
+  padding-bottom: 19px
+  padding-top: 19px
+
+.form-order
+  @extend .flex-bet
+  margin-top: 63px
+
+.order-left
+  @extend .flex-bet
+  flex-direction: column
+
+.p-shipping-address-cart, .p-text-center
+  @include txt-style(16px, 1.2, 700)
+  text-transform: uppercase
+  color: $text-checkout
+
+.details-country
+  width: 355px
+  height: 45px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+
+.details-country > .summary-country::after,
+.details-country > .summary-country::before
+  content: ''
+
+.order-left .details-country .summary-country .caret-country
+  @include txt-style(15px, 1.2, 900)
+  color: #bdbdbd
+  font-family: "Font Awesome 5 Free", sans-serif
+  margin-left: 250px
+
+.p-summary-country
+  @include txt-style(13px, 1.2, 300)
+  color: #b1b1b1
+  margin-left: 14px
+
+.summary-country
+  display: flex
+  width: 100%
+  height: 100%
+  align-items: center
+
+.input-state-shippingform, .input-zip-shippingform, .coupon-shopping
+  margin-top: 20px
+
+.input-state, .input-zip, .input-coupon
+  width: 355px
+  height: 45px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+
+.input-state::placeholder, .input-zip::placeholder,
+.input-coupon::placeholder
+  @include txt-style(13px, 1.2, 300)
+  color: #b1b1b1
+  padding-left: 17px
+
+.p-text-center-cart
+  @include txt-style(14px, 1.2, 300)
+  color: #000000
+
+.button-coupon
+  width: 118px
+  height: 35px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  @include txt-style(11px, 1.2, 700)
+  text-transform: uppercase
+  color: #4a4a4a
+  margin-top: 25px
+
+.order-right
+  width: 360px
+  height: 214px
+  background-color: #f5f3f3
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  padding: 40px
+
+.subtotal-order
+  @extend .flex-bet
+  width: 101px
+
+.p-subtotal-order1, .p-subtotal-order2
+  @include txt-style(11px, 1.2, 400)
+  text-transform: uppercase
+  color: #4a4a4a
+
+.p-grand-total
+  @include txt-style(16px, 1.2, 700)
+  text-transform: uppercase
+  color: #222222
+
+.span-grand-total
+  color: #f16d7f
+
+.hr-shopping
+  width: 275px
+  height: 1px
+  background-color: #f16d7f
+
+.button-submit-shopping
+  width: 273px
+  height: 50px
+  background-color: #f16d7f
+
+.p-button-submit-shopping
+  @include txt-style(16px, 1.2, 700)
+  text-transform: uppercase
+  color: #ffffff
+
+.quote-shipping
+  width: 100px
+  height: 35px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  margin-top: 23px
+
+.span-quote-button
+  @include txt-style(11px, 1.2, 700)
+  text-transform: uppercase
+  color: #4a4a4a

@@ -143,9 +143,14 @@ details[open] > summary::after {
     padding: 10px;
 }
 
+.header-right {
+    display: flex;
+}
+
 .basket-header {
     width: 32px;
     height: 29px;
+    margin-right: 26px;
 }
 
 .account-header {
@@ -158,6 +163,16 @@ details[open] > summary::after {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
+}
+
+.account-header .caret-header {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    padding-left: 8px;
 }
 
 .nav-header {
@@ -421,7 +436,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: #222222;
-    padding: 16px 18px;
+    padding: 16px 11px;
 }
 
 .span3-p3-main {
@@ -613,6 +628,7 @@ figcaption {
 }
 
 .container-offer {
+    height: 529px;
     background-color: #222224;
     display: flex;
     flex: 1;
@@ -690,17 +706,20 @@ figcaption {
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #fbfbfb;
-    padding-bottom: 54px;
+    padding-bottom: 28px;
 }
 
 .review-subscribe {
-    margin-top: 100px;
+    margin: 100px auto auto;
+    max-width: 1600px;
+    height: 438px;
     background-image: url(img/bg_subscribe.png);
     background-color: rgba(242, 242, 242, 0.5);
-    background-size: 100%;
+    background-repeat: no-repeat;
 
 }
-.flex-footer{
+
+.flex-footer {
     min-height: 438px;
     display: flex;
     justify-content: space-between;
@@ -766,7 +785,7 @@ figcaption {
 }
 
 .container1-footer {
-   margin-top: 148px;
+    margin-top: 148px;
 }
 
 .span-text-subscribe {
@@ -789,14 +808,14 @@ figcaption {
 
 .input-form {
     display: flex;
-    justify-content: space-evenly;
 }
+
 
 .input-email {
     width: 334px;
     height: 46px;
     background-color: #e1e1e1;
-    border-radius: 23px;
+    border-radius: 23px 0 0 23px;
     opacity: 0.67;
     font-size: 14px;
     line-height: 54px;
@@ -887,6 +906,7 @@ figcaption {
 .footer-li {
     list-style-type: none;
 }
+
 .footer-link {
     text-decoration: none;
     font-size: 16px;
@@ -896,6 +916,7 @@ figcaption {
     color: #898989;
     transition: 0.5s;
 }
+
 .footer-link:hover {
     color: #f16d7f;
     transform: scale(1.5);
@@ -941,6 +962,7 @@ figcaption {
     transition: 1s;
 
 }
+
 .fabsocial {
     font-size: 16px;
     line-height: 42px;
@@ -1058,10 +1080,12 @@ figcaption {
     transition: 1s;
 
 }
+
 .a-details-product:hover {
     color: #ef5b70;
     transform: scale(1.3);
 }
+
 .a-details-product:first-of-type {
     margin-top: 22px;
 }
@@ -1216,24 +1240,28 @@ hr.hr-women-single2 {
     display: flex;
     flex-direction: column;
 }
+
 #square {
     width: 12px;
     height: 12px;
     background: #ff0000;
     padding-left: 14px;
 }
+
 .red-color-filter {
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
     color: #bcbcbc;
 }
+
 .size-filter {
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
     color: #bcbcbc;
 }
+
 .summary-singlepage {
     display: flex;
     align-items: center;
@@ -1243,6 +1271,7 @@ hr.hr-women-single2 {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
 }
+
 .addtocart-singlepage {
     margin-top: 28px;
     width: 537px;
@@ -1253,16 +1282,19 @@ hr.hr-women-single2 {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .imgsubmit-singlepage {
     width: 26px;
     height: 24px;
 }
+
 .textsubmit-singlepage {
     font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
     color: #ef5b70;
 }
+
 .h2-singlepage {
     margin-top: 120px;
     font-size: 24px;
@@ -1272,10 +1304,12 @@ hr.hr-women-single2 {
     color: #4d4d4d;
     text-align: center;
 }
+
 .alsolike {
     display: flex;
     justify-content: space-between;
 }
+
 .alsolike-content {
     width: 263px;
     height: 364px;
@@ -1284,17 +1318,20 @@ hr.hr-women-single2 {
     margin-top: 72px;
     margin-bottom: 73px;
 }
+
 .div-photo {
     width: 261px;
     height: 280px;
     background-color: #e9e9e9;
 
 }
+
 .link-alsolike {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .name-alsolike {
     font-size: 14px;
     line-height: 1.2;
@@ -1302,6 +1339,7 @@ hr.hr-women-single2 {
     text-transform: uppercase;
     color: #6f6e6e;
 }
+
 .price-alsolike {
     font-size: 16px;
     line-height: 1.2;
@@ -1309,7 +1347,16 @@ hr.hr-women-single2 {
     text-transform: uppercase;
     color: #f16d7f;
 }
+
 .txt-alsolike {
     padding-left: 14px;
     padding-top: 19px;
+}
+
+button {
+    transition: 1s;
+}
+
+button:hover {
+    transform: scale(1.2);
 }
